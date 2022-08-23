@@ -1,5 +1,5 @@
 {
-  "name": "react-native-easy-chat-ui",
+  "name": "@choengteur/react-native-easy-chat-ui",
   "version": "0.4.14",
   "description": "chat UI for React Native",
   "main": "index.js",

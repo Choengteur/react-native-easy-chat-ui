@@ -2,9 +2,7 @@
 
 'use strict'
 
-import React, {Component} from 'react'
-import {View} from 'react-native'
-
+import React from 'react'
 import TopView from './TopView'
 import OverlayView from './OverlayView'
 import OverlayPullView from './OverlayPullView'
@@ -17,12 +15,6 @@ export default class Overlay {
   static PopView = OverlayPopView;
   static PopoverView = OverlayPopoverView;
 
-  // base props
-  //   style: ViewPropTypes.style,
-  //   modal: PropTypes.bool,
-  //   animated: PropTypes.bool,
-  //   overlayOpacity: PropTypes.number,
-  //   overlayPointerEvents: ViewPropTypes.pointerEvents,
   static show (overlayView) {
     let key
     let onDisappearCompletedSave = overlayView.props.onDisappearCompleted

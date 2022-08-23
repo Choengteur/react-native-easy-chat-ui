@@ -4,7 +4,7 @@
 
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import {StyleSheet, View, ViewPropTypes, PixelRatio} from 'react-native'
+import {StyleSheet, View, PixelRatio} from 'react-native'
 const pixelSize = (function () {
   let pixelRatio = PixelRatio.get()
   if (pixelRatio >= 3) return 0.333
@@ -12,27 +12,7 @@ const pixelSize = (function () {
   else return 1
 })()
 export default class Popover extends Component {
-  static propTypes = {
-    ...ViewPropTypes,
-    arrow: PropTypes.oneOf([
-      'none',
-      'topLeft',
-      'top',
-      'topRight',
-      'rightTop',
-      'right',
-      'rightBottom',
-      'bottomRight',
-      'bottom',
-      'bottomLeft',
-      'leftBottom',
-      'left',
-      'leftTop'
-    ]),
-    paddingCorner: PropTypes.number
-  };
-
-  static defaultProps = {
+   static defaultProps = {
     ...View.defaultProps,
     arrow: 'none'
   };

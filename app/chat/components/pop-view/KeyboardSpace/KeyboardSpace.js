@@ -4,14 +4,9 @@
 'use strict'
 
 import React, {Component} from 'react'
-import PropTypes from 'prop-types'
 import {StyleSheet, Platform, View, Keyboard, LayoutAnimation} from 'react-native'
 
 export default class KeyboardSpace extends Component {
-  static propTypes = {
-    topInsets: PropTypes.number
-  };
-
   static defaultProps = {
     topInsets: 0
   };

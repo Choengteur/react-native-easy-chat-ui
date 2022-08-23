@@ -3,24 +3,11 @@
 'use strict'
 
 import React, {Component} from 'react'
-import PropTypes from 'prop-types'
-import ReactNative, {StyleSheet, Animated, View, PanResponder, Platform, ViewPropTypes} from 'react-native'
+import ReactNative, {StyleSheet, Animated, View, PanResponder, Platform} from 'react-native'
 
 import KeyboardSpace from '../KeyboardSpace/KeyboardSpace'
 
 export default class OverlayView extends Component {
-  static propTypes = {
-    style: ViewPropTypes.style,
-    modal: PropTypes.bool,
-    animated: PropTypes.bool,
-    overlayOpacity: PropTypes.number,
-    overlayPointerEvents: ViewPropTypes.pointerEvents,
-    autoKeyboardInsets: PropTypes.bool,
-    onAppearCompleted: PropTypes.func,
-    onDisappearCompleted: PropTypes.func,
-    onCloseRequest: PropTypes.func // (overlayView)
-  };
-
   static defaultProps = {
     modal: false,
     animated: false,

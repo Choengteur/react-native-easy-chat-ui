@@ -18,8 +18,8 @@
 <img alt="react-native-easy-chat-ui" src="https://raw.githubusercontent.com/DaiYz/react-native-easy-chat-ui/master/screenshots/6.png" width="207" height="448" /></p>
 
 ## Installation
-* yarn add @react-native-community/viewpager
-* react-native link @react-native-community/viewpager
+* yarn add react-native-pager-view
+* react-native link react-native-pager-view
 * [npm](https://www.npmjs.com/#getting-started): `npm install react-native-easy-chat-ui --save`
 * [Yarn](https://yarnpkg.com/): `yarn add react-native-easy-chat-ui`
 
@@ -390,7 +390,7 @@ renderSystemMessage| undefined | Custom message system, (data) => {}
       messageSelectIcon: PropTypes.element,
       delMessage: PropTypes.func,
       renderMessageCheck: PropTypes.func,
-    
+
       /* inputBarProps */
       emojiIcon: PropTypes.element,
       placeholder: PropTypes.string,

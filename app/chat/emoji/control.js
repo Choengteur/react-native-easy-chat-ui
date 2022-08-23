@@ -1,13 +1,6 @@
 import React, { PureComponent } from 'react'
-import PropTypes from 'prop-types'
-import { StyleSheet, View, ViewPropTypes } from 'react-native'
+import { StyleSheet, View } from 'react-native'
 export default class Control extends PureComponent {
-  static propTypes = {
-    ...ViewPropTypes,
-    dot: PropTypes.element,
-    activeDot: PropTypes.element
-  };
-
   static defaultProps = {
     ...View.defaultProps
   };

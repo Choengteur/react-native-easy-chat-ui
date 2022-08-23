@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
-import { View, StyleSheet, Dimensions, Animated, Platform } from 'react-native'
-const { width, height } = Dimensions.get('window')
+import { View, StyleSheet, Dimensions, Animated } from 'react-native'
+const { width } = Dimensions.get('window')
 
 export default class PlusPanel extends PureComponent {
   constructor (props) {

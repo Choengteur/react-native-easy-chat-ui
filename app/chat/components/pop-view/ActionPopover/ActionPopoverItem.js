@@ -3,8 +3,7 @@
 'use strict'
 
 import React, {Component} from 'react'
-import PropTypes from 'prop-types'
-import {StyleSheet, View, Text, TouchableOpacity, PixelRatio} from 'react-native'
+import {Text, TouchableOpacity, PixelRatio} from 'react-native'
 const pixelSize = (function () {
   let pixelRatio = PixelRatio.get()
   if (pixelRatio >= 3) return 0.333
@@ -13,13 +12,6 @@ const pixelSize = (function () {
 })()
 
 export default class ActionPopoverItem extends Component {
-  static propTypes = {
-    ...TouchableOpacity.propTypes,
-    title: PropTypes.oneOfType([PropTypes.element, PropTypes.string, PropTypes.number]),
-    leftSeparator: PropTypes.bool,
-    rightSeparator: PropTypes.bool
-  };
-
   static defaultProps = {
     ...TouchableOpacity.defaultProps
   };

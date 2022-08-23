@@ -2,8 +2,7 @@
 
 'use strict'
 
-import React, {Component} from 'react'
-import {View} from 'react-native'
+import React from 'react'
 
 import Overlay from './Overlay/Overlay'
 import ActionPopoverView from './ActionPopover/ActionPopoverView'

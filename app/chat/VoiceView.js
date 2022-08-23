@@ -5,14 +5,11 @@ import {
   Animated,
   Dimensions,
   Text,
-  ViewPropTypes as RNViewPropTypes,
   ActivityIndicator,
   Platform
 } from 'react-native'
 // import {AudioRecorder, AudioUtils} from 'react-native-audio'
-import PropTypes from 'prop-types'
 const delay = (ms) => new Promise(resolve => setTimeout(() => resolve(), ms))
-const ViewPropTypes = RNViewPropTypes || View.propTypes
 
 const { height } = Dimensions.get('window')
 
@@ -269,16 +266,6 @@ const styles = StyleSheet.create({
     color: 'white'
   }
 })
-
-VoiceView.propTypes = {
-  style: ViewPropTypes.style,
-  textStyle: Text.propTypes.style,
-  positionValue: PropTypes.number,
-  fadeInDuration: PropTypes.number,
-  fadeOutDuration: PropTypes.number,
-  opacity: PropTypes.number,
-  sendVoice: PropTypes.func
-}
 
 VoiceView.defaultProps = {
   textStyle: styles.text,

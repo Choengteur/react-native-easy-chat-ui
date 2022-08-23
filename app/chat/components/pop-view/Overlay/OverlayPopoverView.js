@@ -2,31 +2,13 @@
 
 'use strict'
 
-import React, {Component} from 'react'
-import PropTypes from 'prop-types'
-import {View, Dimensions, Platform, StatusBar} from 'react-native'
+import React from 'react'
+import {Dimensions, Platform} from 'react-native'
 
 import OverlayView from './OverlayView'
 import Popover from '../Popover/Popover'
 
 export default class OverlayPopoverView extends OverlayView {
-  static propTypes = {
-    ...OverlayView.propTypes,
-    popoverStyle: Popover.propTypes.style,
-    fromBounds: PropTypes.shape({
-      x: PropTypes.number.isRequired,
-      y: PropTypes.number.isRequired,
-      width: PropTypes.number,
-      height: PropTypes.number
-    }).isRequired,
-    direction: PropTypes.oneOf(['down', 'up', 'right', 'left']),
-    autoDirection: PropTypes.bool, // down -> up, or right -> left
-    directionInsets: PropTypes.number,
-    align: PropTypes.oneOf(['start', 'center', 'end']),
-    alignInsets: PropTypes.number,
-    showArrow: PropTypes.bool,
-    paddingCorner: Popover.propTypes.paddingCorner
-  };
 
   static defaultProps = {
     ...OverlayView.defaultProps,

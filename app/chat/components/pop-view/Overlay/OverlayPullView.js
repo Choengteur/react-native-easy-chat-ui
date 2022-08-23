@@ -2,30 +2,14 @@
 
 'use strict'
 
-import React, {Component} from 'react'
-import PropTypes from 'prop-types'
-import {Animated, View, ViewPropTypes} from 'react-native'
+import React from 'react'
+import {Animated} from 'react-native'
 
 import TopView from './TopView'
 import OverlayView from './OverlayView'
 
 export default class OverlayPullView extends OverlayView {
-  static propTypes = {
-    ...OverlayView.propTypes,
-    side: PropTypes.oneOf(['top', 'bottom', 'left', 'right']),
-    containerStyle: ViewPropTypes.style,
-    rootTransform: PropTypes.oneOfType([
-      PropTypes.oneOf(['none', 'translate', 'scale']),
-      PropTypes.arrayOf(PropTypes.shape({
-        translateX: PropTypes.number,
-        translateY: PropTypes.number,
-        scaleX: PropTypes.number,
-        scaleY: PropTypes.number
-      }))
-    ])
-  };
-
-  static defaultProps = {
+   static defaultProps = {
     ...OverlayView.defaultProps,
     side: 'bottom',
     animated: true,

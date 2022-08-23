@@ -2,20 +2,11 @@
 
 'use strict'
 
-import React, {Component} from 'react'
-import PropTypes from 'prop-types'
+import React from 'react'
 import Overlay from '../Overlay/Overlay'
 import ActionPopoverItem from './ActionPopoverItem'
 
 export default class ActionPopoverView extends Overlay.PopoverView {
-  static propTypes = {
-    ...Overlay.PopoverView.propTypes,
-    items: PropTypes.arrayOf(PropTypes.shape({
-      title: PropTypes.string,
-      onPress: PropTypes.func
-    })).isRequired
-  };
-
   static defaultProps = {
     ...Overlay.PopoverView.defaultProps,
     direction: 'up',

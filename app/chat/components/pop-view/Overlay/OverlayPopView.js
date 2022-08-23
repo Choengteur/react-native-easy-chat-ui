@@ -2,25 +2,12 @@
 
 'use strict'
 
-import React, {Component} from 'react'
-import PropTypes from 'prop-types'
-import {Animated, View, ViewPropTypes} from 'react-native'
+import React from 'react'
+import {Animated} from 'react-native'
 
 import OverlayView from './OverlayView'
 
 export default class OverlayPopView extends OverlayView {
-  static propTypes = {
-    ...OverlayView.propTypes,
-    type: PropTypes.oneOf(['zoomOut', 'zoomIn', 'custom']),
-    containerStyle: ViewPropTypes.style,
-    customBounds: PropTypes.shape({
-      x: PropTypes.number.isRequired,
-      y: PropTypes.number.isRequired,
-      width: PropTypes.number.isRequired,
-      height: PropTypes.number.isRequired
-    })
-  };
-
   static defaultProps = {
     ...OverlayView.defaultProps,
     type: 'zoomOut',
